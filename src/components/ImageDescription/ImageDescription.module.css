@@ -1,0 +1,59 @@
+.imageDesc_mainContainer {
+    width: 50%;
+    height: 81.7vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 81.7vh;
+}
+
+.imageDesc_mainContainer h1 {
+    font-family: 'Fraunces';
+    font-size: 4vmin;
+    text-shadow: 2px 0 #000;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.imageDesc_mainContainer p {
+    font-family: 'Barlow';
+    font-size: 2vmin;
+    font-weight: 600;
+    color: hsl(213, 9%, 39%);
+    width: 23vw;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+@media screen and (max-width: 1425px) {
+    .imageDesc_mainContainer {
+        width: 100%;
+    }
+
+    .imageDesc_mainContainer p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .imageDesc_mainContainer {
+        height: 40vh;
+        background-size: 100% 40vh;
+    }
+
+    .imageDesc_mainContainer h1 {
+        font-size: 6vmin;
+        text-shadow: 2px 0 #000;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+
+    .imageDesc_mainContainer p {
+        font-size: 3vmin;
+        margin-bottom: 4vh;
+        width: 80%;
+    }
+
+}

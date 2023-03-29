@@ -1,0 +1,46 @@
+.header_mainContainer {
+    width: 99.1vw;
+    height: 100vh;
+    color: #fff;
+    background-image: url('../../assets/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    /* background-color: #49C7FA; */
+
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_mainContainer h1 {
+    font-family: 'Fraunces';
+    font-weight: bolder;
+    letter-spacing: 0.7vw;
+    font-size: 6.39vmin;
+    text-transform: uppercase;
+    margin-top: 10vh;
+}
+
+.header_image {
+    position: absolute;
+    top: 46vh;
+    left: 48vw;
+}
+
+@media screen and (max-width: 500px) {
+    .header_mainContainer {
+        height: 60vh;
+        background-size: 100vw 60vh;
+    }
+
+    .header_mainContainer h1 {
+        font-size: 6.39vmin;
+        margin-top: 5vh;
+    }
+
+    .header_image {
+        top: 23vh;
+        left: 46vw;
+    }
+}

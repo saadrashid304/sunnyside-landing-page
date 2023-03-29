@@ -1,0 +1,146 @@
+.container_one {
+    display: flex;
+    align-items: center;
+}
+
+.container_two {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_mainContainer {
+    text-align: center;
+}
+
+.card_mainContainer h2 {
+    letter-spacing: 0.2vw;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 10vh;
+}
+
+.card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_third {
+    background-color: #88CFC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_container h1 {
+    color: hsl(167, 40%, 24%);
+    font-family: 'Barlow';
+    font-weight: bold;
+    text-shadow: 3px 0 hsl(167, 40%, 24%);
+    letter-spacing: 2px;
+    margin-top: 5vh;
+}
+
+.footer_container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0px;
+    margin-top: 2vh;
+}
+
+.footer_navLink {
+    width: 100%;
+}
+
+.footer_navLink li {
+    font-family: 'Barlow';
+    color: hsl(213, 9%, 39%);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer_navLink li:hover {
+    color: #fff;
+}
+
+.footer_icons {
+    width: 70%;
+}
+
+.footer_icons li {
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1425px) {
+    .container_one {
+        flex-direction: column-reverse;
+    }
+
+    .container_oneMedia {
+        flex-direction: column;
+    }
+
+    .container_oneWrap {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card_container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 1118px) {
+    .card_container {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 5vh;
+    }
+
+    .card_mainContainer h2 {
+        margin-bottom: 4vh;
+    }
+
+    .container_two {
+        height: 100%;
+        margin-top: 5vh;
+    }
+
+    .footer_container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card_container {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 5vh;
+        height: 90vh;
+    }
+
+    .card_mainContainer h2 {
+        margin-bottom: 4vh;
+    }
+
+    .container_two {
+        height: 100%;
+        margin-top: 5vh;
+    }
+
+    .footer_container {
+        width: 50%;
+    }
+}
