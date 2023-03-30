@@ -2,7 +2,6 @@ import React, { Fragment, useState } from "react";
 import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Description from "./components/Description/Description";
-import ImageSecond from "./components/ImageSecond/ImageSecond";
 import ImageDescription from "./components/ImageDescription/ImageDescription";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
 import imageCherry from "./assets/desktop/image-graphic-design.jpg";
@@ -10,10 +9,6 @@ import imageOrange from "./assets/desktop/image-photography.jpg";
 import imageEmily from "./assets/image-emily.jpg";
 import imageThomas from "./assets/image-thomas.jpg";
 import imageJennie from "./assets/image-jennie.jpg";
-import imageCone from "./assets/desktop/image-gallery-cone.jpg";
-import imageMilk from "./assets/desktop/image-gallery-milkbottles.jpg";
-import imageOrange2 from "./assets/desktop/image-gallery-orange.jpg";
-import imageSugar from "./assets/desktop/image-gallery-sugarcubes.jpg";
 import facebook from "./assets/icon-facebook.svg";
 import instagram from "./assets/icon-instagram.svg";
 import pinterest from "./assets/icon-pinterest.svg";
@@ -46,18 +41,6 @@ const App = () => {
     setIsHovering(null);
   };
 
-  // const getHoverStyle = () => {
-  //   if (props.color === "yellow") {
-  //     return {
-  //       borderBottom: "5px solid rgba(250, 212, 0, 1)",
-  //     };
-  //   } else {
-  //     return {
-  //       borderBottom: "5px solid rgba(254, 120, 103, 1)",
-  //     };
-  //   }
-  // };
-
   return (
     <Fragment>
       <Header />
@@ -68,7 +51,6 @@ const App = () => {
           color="yellow"
         />
         <div className={styles.image_container1} />
-        {/* <Image source={imageEgg} /> */}
       </div>
       <div className={`${styles.container_one} ${styles.container_oneMedia}`}>
         <div
@@ -123,27 +105,15 @@ const App = () => {
       </div>
       <div className={`${styles.container_one} ${styles.container_oneWrap}`}>
         <div className={`${styles.image_container3}`} />
-        {/* <img src={props.source} alt="" /> */}
-        {/* </div> */}
         <div
           className={`${styles.image_container3} ${styles.image_container4}`}
         />
-        {/* <img src={props.source} alt="" /> */}
-        {/* </div> */}
         <div
           className={`${styles.image_container3} ${styles.image_container5}`}
         />
-        {/* <img src={props.source} alt="" /> */}
-        {/* </div> */}
         <div
           className={`${styles.image_container3} ${styles.image_container6}`}
         />
-        {/* <img src={props.source} alt="" /> */}
-        {/* </div> */}
-        {/* <ImageSecond source={imageMilk} />
-        <ImageSecond source={imageOrange2} />
-        <ImageSecond source={imageCone} />
-        <ImageSecond source={imageSugar} /> */}
       </div>
       <div className={styles.container_third}>
         <div className={styles.footer_container}>
