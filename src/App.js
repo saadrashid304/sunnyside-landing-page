@@ -2,12 +2,9 @@ import React, { Fragment, useState } from "react";
 import styles from "./App.module.css";
 import Header from "./components/Header/Header";
 import Description from "./components/Description/Description";
-import Image from "./components/Image/Image";
 import ImageSecond from "./components/ImageSecond/ImageSecond";
 import ImageDescription from "./components/ImageDescription/ImageDescription";
 import ProfileCard from "./components/ProfileCard/ProfileCard";
-import imageEgg from "./assets/desktop/image-transform.jpg";
-import imageStand from "./assets/desktop/image-stand-out.jpg";
 import imageCherry from "./assets/desktop/image-graphic-design.jpg";
 import imageOrange from "./assets/desktop/image-photography.jpg";
 import imageEmily from "./assets/image-emily.jpg";
@@ -70,10 +67,13 @@ const App = () => {
           desc="We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you."
           color="yellow"
         />
-        <Image source={imageEgg} />
+        <div className={styles.image_container1} />
+        {/* <Image source={imageEgg} /> */}
       </div>
       <div className={`${styles.container_one} ${styles.container_oneMedia}`}>
-        <Image source={imageStand} />
+        <div
+          className={`${styles.image_container1} ${styles.image_container2}`}
+        />
         <Description
           title="Stand out to the right audience"
           desc="Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters. We,ll build and extend your brand in digital places."
@@ -122,10 +122,28 @@ const App = () => {
         </div>
       </div>
       <div className={`${styles.container_one} ${styles.container_oneWrap}`}>
-        <ImageSecond source={imageMilk} />
+        <div className={`${styles.image_container3}`} />
+        {/* <img src={props.source} alt="" /> */}
+        {/* </div> */}
+        <div
+          className={`${styles.image_container3} ${styles.image_container4}`}
+        />
+        {/* <img src={props.source} alt="" /> */}
+        {/* </div> */}
+        <div
+          className={`${styles.image_container3} ${styles.image_container5}`}
+        />
+        {/* <img src={props.source} alt="" /> */}
+        {/* </div> */}
+        <div
+          className={`${styles.image_container3} ${styles.image_container6}`}
+        />
+        {/* <img src={props.source} alt="" /> */}
+        {/* </div> */}
+        {/* <ImageSecond source={imageMilk} />
         <ImageSecond source={imageOrange2} />
         <ImageSecond source={imageCone} />
-        <ImageSecond source={imageSugar} />
+        <ImageSecond source={imageSugar} /> */}
       </div>
       <div className={styles.container_third}>
         <div className={styles.footer_container}>

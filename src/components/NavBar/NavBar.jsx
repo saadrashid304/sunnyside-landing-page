@@ -2,11 +2,16 @@ import React from "react";
 import styles from "./NavBar.module.css";
 import hamburger from "../../assets/icon-hamburger.svg";
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
     <div className={styles.navbar_container}>
       <p>sunnyside</p>
-      <img className={styles.navbar_menuIcon} src={hamburger} alt="" />
+      <img
+        className={styles.navbar_menuIcon}
+        src={hamburger}
+        alt=""
+        onClick={() => props.onDisplayModal(true)}
+      />
       <div className={styles.navbar_navLinkContainer}>
         <ul>
           <li className={styles.navbar_li}>About</li>

@@ -83,6 +83,40 @@
     cursor: pointer;
 }
 
+.image_container1 {
+    width: 50%;
+    display: flex;
+    background-image: url('./assets/desktop/image-transform.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 81.7vh;
+}
+
+.image_container2 {
+    background-image: url('./assets/desktop/image-stand-out.jpg');
+}
+
+.image_container3 {
+    width: 50%;
+    display: flex;
+    background-image: url('./assets/desktop/image-gallery-milkbottles.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 55vh;
+}
+
+.image_container4 {
+    background-image: url('./assets/desktop/image-gallery-orange.jpg');
+}
+
+.image_container5 {
+    background-image: url('./assets/desktop/image-gallery-cone.jpg');
+}
+
+.image_container6 {
+    background-image: url('./assets/desktop/image-gallery-sugarcubes.jpg');
+}
+
 @media screen and (max-width: 1425px) {
     .container_one {
         flex-direction: column-reverse;
@@ -99,6 +133,11 @@
 
     .card_container {
         justify-content: space-around;
+    }
+
+    .image_container1 {
+        width: 100%;
+        /* height: 600px; */
     }
 }
 
@@ -142,5 +181,38 @@
 
     .footer_container {
         width: 50%;
+    }
+
+    .image_container1 {
+        background-image: url('./assets/mobile/image-transform.jpg');
+        /* height: 100%; */
+        height: 300px;
+    }
+
+    .image_container2 {
+        background-image: url('./assets/mobile/image-stand-out.jpg');
+    }
+
+    .image_container3 {
+        background-image: url('./assets/mobile/image-gallery-milkbottles.jpg');
+        height: 30vh;
+    }
+
+    .image_container4 {
+        background-image: url('./assets/mobile/image-gallery-orange.jpg');
+    }
+
+    .image_container5 {
+        background-image: url('./assets/mobile/image-gallery-cone.jpg');
+    }
+
+    .image_container6 {
+        background-image: url('./assets/mobile/image-gallery-sugar-cubes.jpg');
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer_container {
+        width: 70%;
     }
 }
